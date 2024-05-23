@@ -4,11 +4,15 @@ import logging
 from flask import request, jsonify
 from apiflask import Schema, abort
 from apiflask.fields import String, Dict, DateTime, UUID
-from telegram import Bot
 import requests
 
 APP_NAME = "netbox-webhook-listener"
 WEBHOOK_SECRET = "secret"
+
+# Token API của bot
+bot_token = '55x98315:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+# ID chat của người nhận (có thể là ID của nhóm hoặc người dùng)
+chat_id = '-636xxx447'
 
 app = APIFlask(__name__, title="Netbox Webhook Listener", version="1.0")
 
@@ -84,10 +88,7 @@ def webhook_receiver():
 
 
 
-    # Token API của bot
-    bot_token = '5575898315:AAHJuZqnb678LndGCGSPbDFP9py5ZKd70O0'
-    # ID chat của người nhận (có thể là ID của nhóm hoặc người dùng)
-    chat_id = '-636434447'
+
     # Nội dung tin nhắn
     message1 = f"""
     ```Event: {data['event']}
