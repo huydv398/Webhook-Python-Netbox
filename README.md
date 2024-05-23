@@ -126,5 +126,5 @@ curl -X 'POST' 'http://172.16.66.118:5000/webhook ' -H 'connection: close' -H 'x
 ```
 
 Kết quả trả về như sau:
-![Imgur](https://imgur.com/72qytQh)
+![Imgur](https://imgur.com/72qytQh.png)
 
