@@ -121,7 +121,7 @@ def webhook_receiver():
     # print("Received webhook data:", data['data']['url'])
     print("Received webhook data:", message1)
     # return jsonify({'message': 'Webhook received successfully'}), 200
-    return jsonify("Received webhook data:", data), 200
+    return jsonify("Received webhook data:", message1), 200
 
 if __name__ == "__main__":
     app.run("0.0.0.0",debug=True)
