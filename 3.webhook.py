@@ -10,9 +10,9 @@ APP_NAME = "netbox-webhook-listener"
 WEBHOOK_SECRET = "secret"
 
 # Token API của bot
-bot_token = '55yyxxzz315:AAxx0O0'
+bot_token = '5575898315:AAHJuZqnb678LndGCGSPbDFP9py5ZKd70O0'
 # ID chat của người nhận (có thể là ID của nhóm hoặc người dùng)
-chat_id = '-63x7'
+chat_id = '-636434447'
 
 app = APIFlask(__name__, title="Netbox Webhook Listener", version="1.0")
 
